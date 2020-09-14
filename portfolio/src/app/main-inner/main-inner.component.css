@@ -1,0 +1,112 @@
+/* main font-color: rgb(49, 78, 101)*/
+
+.bg {
+    background-image: url("../../assets/charlotte3.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+    
+}
+
+.bg2 {
+    background-image: url("../../assets/programming.jpeg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 200px;
+    filter: blur(2px);
+    -webkit-filter: blur(0px);
+
+}
+
+.about-me, .skills, .contact {
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(53, 53, 53);
+}
+
+.portfolio {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(53, 53, 53);
+}
+
+.quote {
+    padding-left: 5rem;
+    color: rgb(49, 78, 101);
+    font-weight: 600 !important;
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+}
+
+.port-content {
+    background-color: white;
+    padding: 60px;
+}
+
+.about-content {
+    padding: 40px;
+}
+
+/* buttons */
+#tech-buttons {
+    background-color: rgb(5,131,176);
+    color: white;
+    border: none;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: 300px;
+    width: 100px;
+    width: 100px;
+    height: 30px
+}
+
+#github-btn {
+    background-color: rgb(5,131,176);
+    color: white;
+    border: none;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: 300px;
+    width: 180px;
+    height: 40px;
+}
+
+/* links */
+a {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+}
+
+#img-proj {
+    height: 250px;
+    width: 80%;
+}
+
+label {
+    background-color: rgb(5,131,176);
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.content-hr {
+    color: gray;
+    width: 100%;
+    border-top: 6px solid gray !important;
+    position: relative;
+    bottom: 10px;
+    box-shadow: 2px 4px 2px black;
+}

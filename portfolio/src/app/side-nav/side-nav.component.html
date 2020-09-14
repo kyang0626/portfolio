@@ -1,0 +1,26 @@
+<div class="sidenav">
+    <img src="{{ person.imageUrl}}" alt="dp" class="dp-pic">
+    <h2>{{ person.name }}</h2>
+    <div class="sub">{{ person.title }}</div>
+    <ul id="sidenav-contents">
+        <li id="sidenav-sec" (click)="scrollTo('aboutme')">About Me
+            <ng-container *ngIf="currentSection ==='aboutme'">!!!!</ng-container>
+        </li>
+        <li id="sidenav-sec" (click)="scrollTo('portfolio')">Portfolio
+            <ng-container *ngIf="currentSection ==='portfolio'">!!!!</ng-container>
+        </li>
+        <li id="sidenav-sec" (click)="scrollTo('skills')">Skills
+            <ng-container *ngIf="currentSection ==='skills'">!!!!</ng-container>
+        </li>
+        <li id="sidenav-sec" (click)="scrollTo('contactme')">Contact Me
+            <ng-container *ngIf="currentSection ==='contactme'">!!!!</ng-container>
+        </li>
+        <li id="sidenav-sec">Resume</li>
+    </ul>
+    <div>Connect With Me</div>
+    <hr>
+    <ul *ngFor="let s of socialMedia">
+        <li>{{ s }}</li>
+    </ul>
+</div>
+

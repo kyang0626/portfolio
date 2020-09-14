@@ -1,0 +1,59 @@
+/* main blue: rgb(5,131,176) */
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    background: 
+        linear-gradient(
+        rgba(0, 115, 164, 0.81), 
+        rgba(0, 28, 40, 0.81)
+        ),
+        url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Skyline_of_Charlotte_2016.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    text-shadow: 1px 1px 2px black,
+    2px 2px 4px rgba(0, 0, 0, 0.625);
+
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#sidenav-contents {
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.dp-pic {
+    border-radius: 50%;
+    width: 70%;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sub {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#sidenav-sec {
+    padding: 4px;
+}
+
+#sidenav-sec:hover {
+    font-size: 18px;
+    color: rgb(5,131,176);
+    cursor: pointer;
+}
