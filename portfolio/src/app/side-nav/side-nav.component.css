@@ -41,19 +41,27 @@ h2 {
 
 .sub {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 li {
     list-style-type: none;
+    text-align: left;
+    padding-left: 18px;
+    margin: 0;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 0;
 }
 
 #sidenav-sec {
-    padding: 4px;
+    padding: 2px;
 }
 
 #sidenav-sec:hover {
     font-size: 18px;
-    color: rgb(5,131,176);
+    /* color: rgb(5,131,176); */
     cursor: pointer;
 }

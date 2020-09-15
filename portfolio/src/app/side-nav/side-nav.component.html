@@ -15,10 +15,13 @@
         <li id="sidenav-sec" (click)="scrollTo('contactme')">Contact Me
             <ng-container *ngIf="currentSection ==='contactme'">!!!!</ng-container>
         </li>
-        <li id="sidenav-sec">Resume</li>
+        <li id="sidenav-sec" style="padding-top: 20px;">
+            <a href="https://drive.google.com/file/d/136sEhalkz4lvpSgX6AwGC2uB9RXUycCT/view?usp=sharing" style="text-decoration: none; color: white;" target="blank">
+                Resume
+            </a>
+        </li>
     </ul>
-    <div>Connect With Me</div>
-    <hr>
+    <div style="padding: 20px;">Connect With Me</div>
     <ul *ngFor="let s of socialMedia">
         <li>{{ s }}</li>
     </ul>

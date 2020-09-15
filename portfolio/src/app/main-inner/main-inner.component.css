@@ -1,18 +1,19 @@
-/* main font-color: rgb(49, 78, 101)*/
+/* main font-color:  rgb(53, 53, 53)*/
 
 .bg {
-    background-image: url("../../assets/charlotte3.jpg");
+    background-image: url("../../assets/bg/charlotte3.jpg");
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 500px;
+    width: 100%;
     
 }
 
 .bg2 {
-    background-image: url("../../assets/programming.jpeg");
+    background-image: url("../../assets/bg/programming.jpeg");
     position: relative;
     background-position: center;
     background-size: cover;
@@ -24,13 +25,42 @@
 
 }
 
+#parentDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* links */
+a {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+}
+
 .about-me, .skills, .contact {
     background-color: white;
-    height: 500px;
+    height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: rgb(53, 53, 53);
+    font-size: 16px;
 }
+
+.quote {
+    padding-left: 2rem;
+    padding-bottom: 10px;
+    color: rgb(49, 78, 101);
+    font-weight: 600 !important;
+    font-size: 2vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-content {
+    padding: 20px 60px;
+}
+
+
+/* ===== PORTFOLIO SECTION */
 
 .portfolio {
     background-color: white;
@@ -38,27 +68,19 @@
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: rgb(53, 53, 53);
-}
-
-.quote {
-    padding-left: 5rem;
-    color: rgb(49, 78, 101);
-    font-weight: 600 !important;
-    font-size: 2vw;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 10px;
+    font-size: 14px;
 }
 
 .port-content {
     background-color: white;
-    padding: 60px;
+    padding: 40px 60px;
 }
 
-.about-content {
-    padding: 40px;
+.proj-description {
+    padding: 10px;
 }
 
-/* buttons */
+        /* buttons */
 #tech-buttons {
     background-color: rgb(5,131,176);
     color: white;
@@ -67,8 +89,8 @@
     font-size: 12px;
     font-weight: 300px;
     width: 100px;
-    width: 100px;
-    height: 30px
+    height: 20px;
+    letter-spacing: 0.5px;
 }
 
 #github-btn {
@@ -78,19 +100,19 @@
     margin: 2px;
     font-size: 14px;
     font-weight: 300px;
-    width: 180px;
+    width: 140px;
     height: 40px;
-}
-
-/* links */
-a {
-    color: rgb(53, 53, 53);
-    text-decoration: none;
+    letter-spacing: 1.5px;
 }
 
 #img-proj {
-    height: 250px;
+    height: 200px;
     width: 80%;
+}
+
+.project-title {
+    font-weight: 600;
+    color:  rgb(53, 53, 53)!important;
 }
 
 label {
@@ -109,4 +131,78 @@ label {
     position: relative;
     bottom: 10px;
     box-shadow: 2px 4px 2px black;
+}
+
+/* ==== timeline ==== */
+
+.port-timeline {
+    position: relative;
+    padding: 50px auto;
+    margin: 20px 0;
+    width: 1000px;
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+
+.port-timeline:before {
+    content:'';
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.port-timeline ul li.li-element {
+    line-height: normal;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.port-timeline ul li.li-element:before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: rgb(5,131,176);
+    border-radius: 20%;
+}
+
+.li-date {
+    font-style: italic;
+}
+
+/* ====== SKILLS SECTION ====== */
+
+#skill-icons {
+    padding: 20px 40px 40px 60px;
+}
+
+/* ======= CONTACT ME SECTION ===== */
+
+.inner-content {
+    height: 500px;
+    padding: 0px;
+    margin: 0;
+}
+
+#contact-container {
+    height: 400px;
+    width: 80%;
+    background-color: rgb(228, 228, 228);
+    margin: 0;
+    padding: 20px 0px 20px 80px;
+}
+
+#p-contact {
+    padding-right: 80px;
+}
+
+#a-contact {
+    color: rgb(5,131,176) !important;
 }
