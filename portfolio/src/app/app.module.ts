@@ -7,13 +7,15 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MainInnerComponent } from './main-inner/main-inner.component';
 
 import { Routes, RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
-    MainInnerComponent
+    MainInnerComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

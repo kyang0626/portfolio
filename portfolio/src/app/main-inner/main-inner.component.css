@@ -1,7 +1,8 @@
 /* main font-color:  rgb(53, 53, 53)*/
 
 .bg {
-    background-image: url("../../assets/bg/charlotte3.jpg");
+    /* background-image: url("../../assets/bg/charlotte3.jpg"); */
+    background: white;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -60,9 +61,36 @@ a {
 }
 
 .about-content {
-    padding: 20px 60px 40px 60px;
+    padding: 20px 80px 60px 80px;
     font-size: 14px;
     line-height: 1.6;
+}
+
+#inner-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 240px;
+    position: relative;
+    margin: 20px;
+    bottom: 112px;
+}
+
+.inner-description {
+    position: relative;
+    bottom: 250px;
+    width: 500px;
+    left: 28%;
+    color: white;
+    text-shadow: 1px 2px 2px black;  
+
+}
+
+.inner-pic-holder:nth-child(2) {
+    background: rgb(5, 130, 176);
+    color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    padding: 10rem 20%;
+    
 }
 
 
@@ -80,6 +108,7 @@ a {
 .port-content {
     background-color: white;
     padding: 40px 60px;
+    text-align: left;
 }
 
 .proj-description {
@@ -95,7 +124,7 @@ a {
     font-size: 12px;
     font-weight: 300px;
     width: 100px;
-    height: 20px;
+    height: 30px;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px black;
 }
@@ -139,6 +168,10 @@ label {
     position: relative;
     bottom: 10px;
     box-shadow: 2px 4px 2px black;
+}
+
+.proj-separate {
+    border-top: 2px solid red;
 }
 
 .tech-proj {
@@ -225,3 +258,39 @@ label {
 #a-contact {
     color: rgb(5,131,176) !important;
 }
+
+
+/*=============== MEDIA QUERIES =======================*/
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px 30px;
+    }
+
+    .bg {
+        display: none;
+    }
+    .bg2 {
+        display: none;
+    }
+
+    .timeline-cont {
+        text-align: left;
+    }
+    .port-content {
+        padding: 20px 30px;
+    }
+
+    .cognixia-projects {
+        text-align: none;
+    }
+
+    #img-proj {
+        width: 100%;
+    }
+
+    #projects-container {
+        margin: 0;
+    } 
+  }
+  

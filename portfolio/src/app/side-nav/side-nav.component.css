@@ -6,8 +6,8 @@
     width: 20%;
     background: 
         linear-gradient(
-        rgba(0, 115, 164, 0.81), 
-        rgba(0, 28, 40, 0.81)
+        rgb(5,131,176, 0.81), 
+        rgba(5, 28, 40, 0.81)
         ),
         url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Skyline_of_Charlotte_2016.jpg");
     background-repeat: no-repeat;
@@ -66,3 +66,28 @@ ul {
     /* color: rgb(5,131,176); */
     cursor: pointer;
 }
+
+/*=============== MEDIA QUERIES =======================*/
+
+@media (max-width: 768px) {
+    .sidenav {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background: rgb(5, 111, 150);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-shadow: 1px 1px 2px black,
+        2px 2px 4px rgba(0, 0, 0, 0.625);
+        text-align: center;
+    }
+
+    .dp-pic {
+        width: 24%;
+    }
+
+    #sidenav-contents {
+        display: none;
+    }
+    
+  }

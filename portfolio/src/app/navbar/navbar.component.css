@@ -1,0 +1,11 @@
+#mobile-nav {
+    background: rgb(58, 58, 58);
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #mobile-nav {
+        display: block;
+    }
+}
