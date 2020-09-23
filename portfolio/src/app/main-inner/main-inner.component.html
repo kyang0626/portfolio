@@ -3,15 +3,16 @@
         <div class="inner-pic-holder"></div>
         <div class="inner-pic-holder"> <img id="inner-pic" src="../../assets/grad-pic.jpg" alt=""></div>
         <div class="inner-description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius velit ex a iure quam 
-                deserunt quisquam at nisi voluptates mollitia excepturi explicabo, facere quos ipsa! Aperiam tenetur odit optio voluptas?</p>
+            <p style="font-style: italic;">Life is movement. If we don't move, we are no longer living.</p>
+            <br>
+            <br>
             <strong>More About Me</strong>
         </div>
         <div class="inner-pic-holder"><br></div>
     </div>
     <section class="about-me" id="aboutme">
-        <label for="aboutme-label">About Me</label>
-        <hr class="content-hr"> 
+        <p class="section-header">Who am I?</p>
+        <label for="aboutme-label" id="section-label">About Me</label>
         <div class="about-content">
             <div class="quote"> | Full-Stack Developer with a background in Kinesiology</div>
             <p class="bio">
@@ -58,17 +59,21 @@
             </p>
         </div>
     </section>
-    <div class="bg2"></div>
+        <div class="bg2-mobile">
+        <div class="section-separator"></div>
+        <div class="section-separator"></div>
+        <div class="section-separator"></div>
+    </div>
     <section class="portfolio" id="portfolio">
-        <label for="porfolio-label">Portfolio</label>
-        <hr class="content-hr">
+        <p class="section-header">My Work</p>
+        <label for="porfolio-label" id="section-label">Portfolio</label>
         <div class="port-content">
             <p>Some of my works recently and in the past.</p>
             <div class="port-timeline">
                 <ul>
                     <li class="li-element">
                         <div class="li-date">
-                            <h4>Now</h4>
+                            <p>Now</p>
                         </div>
                         <div class="timeline-cont">
                             <strong>Open for training and contract positions.</strong>
@@ -79,43 +84,45 @@
                             <br>Instructor: Maximilian Schwarzmuller</p>
                             <p>also, the course: <strong>Build an app with ASP.NET Core and Angular from scratch</strong>
                             <br>Instructor: Neil Cummings</p>
-                            <hr>
                         </div>
                     </li>
+                    <hr class="element-hr">
                     <li class="li-element">
                         <div class="li-date">
-                            <h4>2019 - 2020</h4>
+                            <p>2019 - 2020</p>
                         </div>
                         <div class="timeline-cont">
-                            <strong>Cognixia Projects</strong>
-                            <br>
-                            <br>
+                            <strong id="timeline-exp">Cognixia Projects</strong>
                             <br>
                             <div class="cognixia-projects">
-                                <p>Below are 3 of the console applications I have built on using <span style="color: purple; font-weight: bold;">C#</span> during the time at Cognixia.
-                                <br>During this time, I was focusing on backend work using C# language.</p>
-                                <br>
+                                <p style="padding-top: 10px;">Below are 3 of the console applications I have built on using 
+                                    <span style="color: purple; font-weight: bold;">C#</span>during the time at Cognixia.
+                                    <br>
+                                    During this time, I was focusing on backend work using C# language.
+                                </p>
                                 <div class="container" id="projects-container">
                                     <div class="row">
-                                        <div class="col-xl-4">
+                                        <div class="col-xl-6">
                                             <h6> <a href="https://github.com/kyang0626/hangman" target="blank">Hangman</a></h6>
-                                            <img src="../../assets/projects/hangman.gif" alt="" id="img-proj">
+                                            <img src="../../assets/projects/hangman.gif" id="img-proj" class="img-fluid" alt="Responsive image">
                                             <br>
                                             <br>
                                             <p><strong>Hangman</strong>, like the game, is a console app that asks the user to enter a letter and see if it matches the chosen word.</p>
                                             <p>Purpose: demonstrating C# basics - if / else conditons, loops, and data.</p>
                                         </div>
-                                        <div class="col-xl-4">
+                                        <div class="col-xl-6">
                                             <h6> <a href="https://github.com/kyang0626/Number-Validator" target="blank">Number Validator</a></h6>
-                                            <img src="../../assets/projects/number-validator.gif" alt="" id="img-proj">
+                                            <img src="../../assets/projects/number-validator.gif" alt="Responsive image" class="img-fluid" id="img-proj">
                                             <br>
                                             <br>
                                             <p><strong>Number Validator</strong> is a console app that asks the user to enter a phone number and it will validate if it is a real phone number.</p>
                                             <p>Purpose: demonstrating C# basics - if / else conditons, loops, and data.</p>
                                         </div>
-                                        <div class="col-xl-4">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6">
                                             <h6> <a href="https://github.com/kyang0626/Cash-Register" target="blank">Cash Register</a></h6>
-                                            <img src="../../assets/projects/cash-register.gif" alt="" id="img-proj">
+                                            <img src="../../assets/projects/cash-register.gif" alt="Responsive image" class="img-fluid" id="img-proj">
                                             <br>
                                             <br>
                                             <p><strong>Cash Register</strong> is a console app that allows the user to look for specific produce by entering letters.</p>
@@ -123,17 +130,24 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <br>
-                            <br>
-                            <strong>UNCC Coding Bootcamp</strong>
+                            </div>                           
+                        </div>
+                        <br>
+                    </li>
+                    <hr style="border-top: 2px dashed rgba(128, 128, 128, 0.733);">
+                    <li class="li-element">
+                        <div class="li-date">
+                            <p>2019</p>
+                        </div>
+                        <div class="timeline-cont">
+                            <strong id="timeline-exp">UNCC Coding Bootcamp</strong>
                             <br>
                             <br>
                             <p>I have work mainly on the frontend aspects (HTML, CSS, layouts, etc...) of the three collaborative projects below. <br>These projects are done by me and a group of students during the bootcamp.</p>
                             <div class="proj-element">
                                 <div class="container" id="projects-container">
                                     <div class="row">
-                                        <div class="col-xl-6"> 
+                                        <div class="col-xl-6">
                                             <div class="proj-description">
                                                 <a href="https://projectecomm.herokuapp.com/" target="blank"><h4 class="project-title">Koscowix</h4></a>
                                                 <p class="projects-para">Koscowix is an e-commerce website that sells high-end luxurious watches.</p>
@@ -143,16 +157,16 @@
                                                     <li>An environment for customers with sense of fashion and elegance.</li>
                                                 </ul>
                                                 <br>
-                                                <a href="https://github.com/kyang0626/Project-3"><button id="github-btn">Github Info</button></a>
+                                                <a href="https://github.com/kyang0626/Project-3" target="blank"><button id="github-btn">Github Info</button></a>
                                                 <br>
                                                 <br>
                                                 <h6 class="tech-proj">TECHNOLOGIES</h6>
-                                                <button id="tech-buttons">React.js</button>
-                                                <button id="tech-buttons">JavaScript</button>
-                                                <button id="tech-buttons">MySql DB</button>
-                                                <button id="tech-buttons">Node.js</button>
-                                                <button id="tech-buttons">Bootstrap</button>
-                                                <button id="tech-buttons">Sequelize</button>
+                                                <button id="tech-buttons"><a href="https://reactjs.org/" target="blank">React.js</a></button>
+                                                <button id="tech-buttons"><a href="https://www.javascript.com/" target="blank">JavaScript</a></button>
+                                                <button id="tech-buttons"><a href="https://www.mysql.com/" target="blank">MySql DB</a></button>
+                                                <button id="tech-buttons"><a href="https://nodejs.org/en/" target="blank">Node.js</a></button>
+                                                <button id="tech-buttons"><a href="https://getbootstrap.com/" target="blank">Bootstrap</a></button>
+                                                <button id="tech-buttons"><a href="https://sequelize.org/" target="blank">Sequelize</a></button>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
@@ -160,6 +174,9 @@
                                                 <a href="https://projectecomm.herokuapp.com/" target="blank"><img id="img-proj" src="../../assets/projects/project-3.png" alt=""></a>
                                             </div>
                                         </div>
+                                    </div>
+                                    <hr class="proj-hr">
+                                    <div class="row">
                                         <div class="col-xl-6">
                                             <div class="proj-description">
                                                 <a href="https://sithub-project.herokuapp.com/" target="blank"><h4 class="project-title">Sithub</h4></a> 
@@ -169,16 +186,16 @@
                                                     <li>After some online asssessments, the app will find the most suitable candidate for babysitting</li>
                                                 </ul>
                                                 <br>
-                                                <a href="https://github.com/Lara-E/SitHub"><button id="github-btn">Github Info</button></a>
+                                                <a href="https://github.com/Lara-E/SitHub" target="blank"><button id="github-btn">Github Info</button></a>
                                                 <br>
                                                 <br>
                                                 <h6 class="tech-proj">TECHNOLOGIES</h6>
-                                                <button id="tech-buttons">Materialize</button>
-                                                <button id="tech-buttons">JavaScript</button>
-                                                <button id="tech-buttons">MySql DB</button>
-                                                <button id="tech-buttons">Handlebars.js</button>
-                                                <button id="tech-buttons">Sequelize</button>
-                                                <button id="tech-buttons">Node.js</button>
+                                                <button id="tech-buttons"><a href="https://www.javascript.com/" target="blank">JavaScript</a></button>
+                                                <button id="tech-buttons"><a href="https://materializecss.com/" target="blank">Materialize</a></button>
+                                                <button id="tech-buttons"><a href="https://www.mysql.com" target="blank">MySql DB</a></button>
+                                                <button id="tech-buttons"><a href="https://handlebarsjs.com/" target="blank">Handlebars.js</a></button>
+                                                <button id="tech-buttons"><a href="https://sequelize.org/" target="blank">Sequelize</a></button>
+                                                <button id="tech-buttons"><a href="https://nodejs.org/en" target="blank">Node.js</a></button>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
@@ -186,6 +203,9 @@
                                                 <a href="https://sithub-project.herokuapp.com/" target="blank"><img id="img-proj" src="../../assets/projects/project-2.png" alt=""></a>
                                             </div>
                                         </div>
+                                    </div>
+                                    <hr class="proj-hr">
+                                    <div class="row">
                                         <div class="col-xl-6">
                                             <div class="proj-description">
                                                 <a href="https://kyang0626.github.io/group-webpage/" target="blank"><h4 class="project-title">N'STANT</h4></a>  
@@ -196,16 +216,16 @@
                                                     <li>App only shows food places with a short distance from their location.</li>                                                
                                                 </ul>
                                                 <br>
-                                                <a href="https://github.com/kyang0626/group-webpage"><button id="github-btn">Github Info</button></a> 
+                                                <a href="https://github.com/kyang0626/group-webpage" target="blank"><button id="github-btn">Github Info</button></a> 
                                                 <br>
                                                 <br>
                                                 <h6 class="tech-proj">TECHNOLOGIES</h6>
-                                                <button id="tech-buttons">Bootstrap</button>
-                                                <button id="tech-buttons">JavaScript</button>
-                                                <button id="tech-buttons">Firebase</button>
-                                                <button id="tech-buttons">JQuery</button>
-                                                <button id="tech-buttons">Node.js</button>
-                                                <button id="tech-buttons">API</button>
+                                                <button id="tech-buttons"><a href="https://getbootstrap.com/" target="blank">Bootstrap</a> </button>
+                                                <button id="tech-buttons"><a href="https://www.javascript.com/" target="blank">JavaScript</a> </button>
+                                                <button id="tech-buttons"><a href="https://firebase.google.com/" target="blank">Firebase</a> </button>
+                                                <button id="tech-buttons"><a href="https://jquery.com/" target="blank">JQuery</a> </button>
+                                                <button id="tech-buttons"><a href="https://nodejs.org/en" target="blank">Node.js</a> </button>
+                                                <button id="tech-buttons"><a href="https://developers.google.com/maps/documentation" target="blank">Google API</a></button>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
@@ -213,53 +233,132 @@
                                                 <a href="https://kyang0626.github.io/group-webpage/" target="blank"><img id="img-proj" src="../../assets/projects/project-one.png"></a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>    
+                                    <p style="margin: 20px 40px 80px 40px; float: right; font-style: italic;">More of my works can be found at my 
+                                        <a href="https://www.github.com/kyang0626?tab=repositories" target="blank" style="font-weight: 600; color: #555555;">GitHub</a>.
+                                    </p>           
                                 </div>
                             </div>
                         </div>
-                        <br>
                     </li>
+                    <hr>
                     <li class="li-element">
                         <div class="li-date">
-                            <h4>2018 - 2019</h4>
+                            <p>2018 - 2019</p>
                         </div>
                         <div class="timeline-cont">Manufacture Associate at Corning Inc.</div>
                     </li>
                     <div style="clear:both;"></div>
                 </ul>
-            </div>
-            <br>
-            <br>
-            <p style="margin: 20px 40px 80px 40px; float: right; font-style: italic;">More of my works can be found at my 
-            <a href="https://www.github.com/kyang0626?tab=repositories" target="blank" style="font-weight: bold;">GitHub</a>.
-            </p>
-            <br>
-            <br>   
+            </div>   
         </div>
     </section>
     <div class="bg2"></div>
+    <div class="bg2-mobile">
+        <div class="section-separator2"></div>
+        <div class="section-separator2"></div>
+        <div class="section-separator2"></div>
+    </div>
     <div class="skills" id="skills">
-        <label for="skills">Skills</label>
-        <hr class="content-hr">
+        <p class="section-header">My Specialty</p>
+        <label for="skills" id="section-label">My Skills</label>
         <div class="container">
             <div class="row">
-                
+                <div class="col-md-12">
+                    <p>Skills that I have used before or good to work with.</p>
+                </div>
+                <div class="col-md-6" id="skills">
+                    <div class="progress-wrap">
+                        <h3>C#</h3>
+                        <div class="progress">
+                            <div class="progress-bar skill-1">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="skills">
+                    <div class="progress-wrap">
+                        <h3>ASP.NET Core</h3>
+                        <div class="progress">
+                            <div class="progress-bar skill-2">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="skills">
+                    <div class="progress-wrap">
+                        <h3>Angular</h3>
+                        <div class="progress">
+                            <div class="progress-bar skill-3">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="skills">
+                    <div class="progress-wrap">
+                        <h3>HTML5, CSS3, JavaScript</h3>
+                        <div class="progress">
+                            <div class="progress-bar skill-4">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" id="skills">
+                    <div class="progress-wrap">
+                        <h3>MySQL</h3>
+                        <div class="progress">
+                            <div class="progress-bar skill-5">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="bg2-mobile">
+        <div class="section-separator"></div>
+        <div class="section-separator"></div>
+        <div class="section-separator"></div>
+    </div>
     <div class="contact" id="contactme">
-        <label class="content">Contact Me</label>
-            <hr class="content-hr">
+        <p class="section-header">Connect with Me</p>
+        <label class="content" id="section-label">Contact</label>
             <div class="inner-content">
                 <div class="container" id="contact-container">
-                    <div id="contact-row" class="row">
-                        <p id="p-contact">Email:</p><p><a id="a-contact" href="#" target="blank">kong_yang828@hotmail.com</a></p>     
-                    </div>
-                    <div id="contact-row" class="row">
-                        <p id="p-contact">LinkedIn:</p><p><a id="a-contact" href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank">https://www.linkedin.com/in/kong-yang-393a35182/</a></p>
-                    </div>
-                    <div id="contact-row" class="row">
-                        <p id="p-contact">Github:</p><p><a id="a-contact" href="https://www.github.com/kyang0626/" target="blank">https://www.github.com/kyang0626</a></p>
+                    <div class="row">
+                        <div class="col-5">
+                            <p>LinkedIn: https://www.linkedin.com/in/kong-yang-393a35182/</p>
+                            <br>
+                            <p>Email: kong_yang828@hotmail.com</p>
+                            <br>
+                            <p>GitHub: https://wwww.github.com/kyang0626</p>
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <form action="kong_yang828@hotmail.com">
+                                    <div class="form-group">
+                                        <input type="text" type="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" type="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" type="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea clas="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" clas="btn btn-primary btn-send-message" value="Send Message">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>    
