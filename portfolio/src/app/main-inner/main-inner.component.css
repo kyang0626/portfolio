@@ -66,19 +66,12 @@ h6 {
     overflow: hidden;
 }
 
-/* links */
-a {
-    color: white;
-    text-decoration: none;
-}
-
 .about-me, .skills, .contact {
     background-color: white;
     height: 100%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
     color: rgb(85,85,85);
-    font-size: 16px;
 }
 
 .quote {
@@ -133,6 +126,11 @@ a {
     font-family: "Montserrat", sans-serif;
     color: rgb(85,85,85);
     font-size: 14px;
+}
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
 }
 
 .port-content {
@@ -286,7 +284,7 @@ hr {
 /* ====== SKILLS SECTION ====== */
 
 .skills {
-    height: 450px;
+    height: 500px;
 }
 
 .skills .container {
@@ -383,78 +381,113 @@ hr {
 .progress-bar.skill-1 span {
     position: absolute;
     top: 8px;
-    right: 50px;
+    right: 18%;
     color: purple;
 }
 .progress-bar.skill-2 span {
     position: absolute;
     top: 8px;
-    right: 100px;
+    right: 38%;
     color: rgb(81,43,212);
 }
 .progress-bar.skill-3 span {
     position: absolute;
     top: 8px;
-    right: 240px;
+    right: 48%;
     color: red;
 }
 .progress-bar.skill-4 span {
     position: absolute;
     top: 8px;
-    right: 56px;
+    right: 10%;
     color: rgb(0, 81, 255);
 }
 .progress-bar.skill-5 span {
     position: absolute;
     top: 8px;
-    right: 50px;
+    right: 28%;
     color: rgb(242,146,33);
-}
-
-
-.fade-in {
-    animation: fadeInUp ease 20s;
-    -webkit-animation: fadeInUp ease 20s;
-    -moz-animation: fadeInUp ease 20s;
-    -o-animation: fadeInUp ease 20s;
-    -ms-animation: fadeInUp ease 20s;
-}
-
-@keyframes fadeInUp {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
 }
 
 
 /* ======= CONTACT ME SECTION ===== */
 
-.inner-content {
-    height: 500px;
-    padding: 0px;
-    margin: 0;
+.contact {
+    padding-top: 100px;
+    font-size: 14px;
 }
 
-#contact-container {
-    height: 400px;
+.contact input {
+    height: 30px;
+    width: 400px;
+    margin-bottom: 10px;
+    background: rgba(224, 224, 224, 0.473);
+    border: none;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.contact .col-xl-5 {
+    height: 200px;
+    padding: 40px 40px;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.contact a { 
+    color: rgb(5, 130, 176);
+}
+
+
+form {
+    padding: 40px 0;
+    position: relative;
+    right: 14px;
+}
+
+textarea {
+    height: 200px;
+    width: 400px;
+    background: rgba(224, 224, 224, 0.473);
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background: rgba(0, 110, 255, 0.89);
+    color: white;
+    font-size: 14px;
+}
+
+.form-control {
+    color: #55555598;
+}
+
+.contact-icon {
+    padding-right: 20px;
+}
+
+.footer {
+    background: rgb(52,58,64);
+    height: 100px;
     width: 100%;
-    background-color: rgb(228, 228, 228);
-    margin: 0;
-    padding: 20px 0px 20px 80px;
+    padding: 20px;
+    color: white;
 }
 
-
-#p-contact {
-    padding-right: 80px;
+.footer a {
+    color: rgb(5, 130, 176);
+    font-weight: 600;;
 }
-
-#a-contact {
-    color: rgb(5,131,176) !important;
-}
-
 
 /*=============== MEDIA QUERIES =======================*/
 
 @media (max-width: 768px) {
+
+    /* --- ABOUT ----*/
     .about-content {
         padding: 20px 30px 20px 30px;
         line-height: 20px;
@@ -470,6 +503,7 @@ hr {
     .bg2 {
         display: none;
     }
+    /* --- PORTFOLIO ---*/
     .timeline-cont {
         text-align: left;
     }
@@ -500,10 +534,6 @@ hr {
         font-weight: 400;
     }
 
-    .about-content {
-        padding: 0px 10px;
-    }
-
     .section-separator {
         display: block;
     }
@@ -520,9 +550,33 @@ hr {
 
     }
 
+    /* --- ABOUT --- */
+
+    /* --- CONTACT --- */
+    .contact .col-xl-5 {
+        padding: 40px 0px;
+    }
+
+    form {
+        padding: 40px 0;
+    }
+
+    .contact .container {
+        margin: 20px 40px;
+    }
+
   }
 
   @media (max-width: 568px) {
+
+    /* --- ABOUTME --- */
+    .about-content {
+        padding: 0 10px;
+    }
+
+    /* --- PORTFOLIO --- */
+ 
+
     .port-timeline::before {
         display: none;
     }
@@ -569,6 +623,30 @@ hr {
     hr {
         float: left;
     }
+
+    /* --- SKILLS --- */
+
+    .skills {
+        height: 550px;
+    }
+
+    /* --- CONTACT --- */
+
+    .contact {
+        padding-top: 40px;
+    }
+
+    .contact .col-xl-5 {
+        height: 200px;
+        padding: 0;
+        position: relative;
+        right: 18px;
+    }
+
+    .contact .col-xl-7 {
+        padding: 0 0 40px 0;
+    }
+
 
   }
   

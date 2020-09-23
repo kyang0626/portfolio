@@ -16,14 +16,19 @@
             <ng-container *ngIf="currentSection ==='contactme'">!!!!</ng-container>
         </li>
         <li id="sidenav-sec" style="padding-top: 20px;">
-            <a href="https://drive.google.com/file/d/136sEhalkz4lvpSgX6AwGC2uB9RXUycCT/view?usp=sharing" style="text-decoration: none; color: white;" target="blank">
+            <a href="https://drive.google.com/file/d/136sEhalkz4lvpSgX6AwGC2uB9RXUycCT/view?usp=sharing" target="blank">
                 Resume
             </a>
         </li>
-        <div style="padding: 20px;">Connect With Me</div>
-        <ul *ngFor="let s of socialMedia">
-            <li>{{ s }}</li>
-        </ul>
+        
     </ul>
+    <div class="sidenav-social">
+        <p>Connect With Me</p>
+        <div class="i-social">
+            <a href="mailto:kong_yang828@hotmail.com" target="blank"><img src="../../assets/icons/outlook.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank"><img src="../../assets/icons/linkedin.png" alt=""></a>
+            <a href="https://github.com/kyang0626" target="blank"><img src="../../assets/icons/github.png" alt=""></a>
+        </div>
+    </div>
 </div>
 

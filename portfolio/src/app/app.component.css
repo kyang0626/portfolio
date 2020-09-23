@@ -35,12 +35,6 @@ div {
         background-color: green;
     }
 
-    app-navbar {
-        position: fixed;
-        top: -50px;
-        transition: top 0.3s;
-        width: 100%;
-    }
   }
 
 
