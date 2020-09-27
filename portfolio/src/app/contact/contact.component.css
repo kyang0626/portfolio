@@ -1,0 +1,151 @@
+.contact {
+    height: 100%;
+    padding-top: 40px;
+    font-size: 14px;
+    width: 100%;
+    background: white;
+}
+
+.contact input {
+    height: 30px;
+    width: 400px;
+    margin-bottom: 0px;
+    background: rgba(224, 224, 224, 0.473);
+    border: none;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.contact .col-xl-5 {
+    height: 200px;
+    padding: 40px 40px;
+    margin: 0;
+    font-size: 14px;
+}
+
+#section-label {
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: rgb(85,85,85);
+}
+
+.section-header {
+    padding: 20px 20px 0px 20px;
+    margin: 0px;
+    color: rgba(128, 128, 128, 0.747);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.contact a { 
+    color: rgb(5, 130, 176);
+}
+
+
+form {
+    padding: 40px 0;
+    position: relative;
+    right: 14px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    margin-bottom: 4px;
+}
+
+textarea {
+    height: 200px;
+    width: 400px;
+    background: rgba(224, 224, 224, 0.473);
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.btn-primary {
+    background: rgba(0, 110, 255, 0.89);
+    color: white;
+    font-size: 14px;
+}
+
+.form-control {
+    color: #55555598;
+}
+
+.contact-icon {
+    padding-right: 20px;
+}
+
+.footer {
+    background: rgb(52,58,64);
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+.footer a {
+    color: rgb(5, 130, 176);
+    font-weight: 600;;
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .col-xl-5 {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .col-xl-5 p {
+        margin: 0;
+    }
+
+    .contact .container {
+        margin: 20px 40px;
+    }
+
+    form {
+        left: -12px;
+    }
+
+    
+
+}
+
+@media (max-width: 600px) {
+
+    .contact .col-xl-5 {
+        height: 160px;
+        padding: 0;
+        position: relative;
+        right: 18px;
+    }
+
+    .contact .col-xl-7 {
+        padding: 0 0 40px 0;
+    }
+
+    form {
+        padding-top: 10px;
+    }
+
+
+  }

@@ -1,0 +1,40 @@
+<div class="contact" id="contactme">
+    <p class="section-header">Connect with Me</p>
+    <label class="content" id="section-label">Contact</label>
+        <div class="inner-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-md-12">
+                        <p><img src="../../assets/icons/linkedin.png" alt="" class="contact-icon"> <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank">kongyang393a35182</a></p>
+                        <br>
+                        <p><img src="../../assets/icons/outlook.png" alt="" class="contact-icon"><a href="mailto:kong_yang828@hotmail.com" target="blank">@kongyang828</a></p>
+                        <br>
+                        <p><img src="../../assets/icons/github.png" alt="" class="contact-icon"> <a href="https://github.com/kyang0626" target="blank">kyang0626</a></p>
+                    </div>
+                    <div class="col-xl-7 col-md-12">
+                        <form>
+                            <div class="form-group" (ngSubmit)="submitForm()">
+                                <label for="nameInput">Name</label>
+                                <input type="text" class="form-control" id="nameInput" name="name" placeholder="ex. John Doe" [(ngModel)]="name">
+                              </div>
+                            <div class="form-group">
+                              <label for="inputEmail">Email address</label>
+                              <input type="text" class="form-control" id="inputEmail" name="email" placeholder="ex. johnny32@gmail.com" [(ngModel)]="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="subjectInput">Subject</label>
+                                <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="ex. Hello" [(ngModel)]="subject">
+                              </div>
+                            <div class="form-group">
+                                <textarea name="message" class="textarea" placeholder="Message" [(ngModel)]="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+        </div>    
+</div>

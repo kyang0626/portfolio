@@ -31,19 +31,23 @@
 
 .dp-pic {
     border-radius: 50%;
-    width: 70%;
-    padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
 }
 
 .sidenav h2 {
     text-align: center;
     color: white;
+    font-size: 24px;
+    margin: 0;
 }
 
 .sub {
     text-align: center;
     padding-bottom: 40px;
     color: rgba(255, 255, 255);
+    font-size: 16px;
 }
 
 .sidenav li {
@@ -99,10 +103,10 @@ ul {
 
 /*=============== MEDIA QUERIES =======================*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .sidenav {
         position: relative;
-        height: 300px;
+        height: 340px;
         width: 100%;
         background: rgb(5, 111, 150);
         background-repeat: no-repeat;
@@ -110,14 +114,11 @@ ul {
         text-shadow: 1px 1px 2px black,
         2px 2px 4px rgba(0, 0, 0, 0.625);
         text-align: center;
-    }
-
-    .dp-pic {
-        width: 24%;
+        padding-top: 40px;
     }
 
     #sidenav-contents {
         display: none;
     }
     
-  }
+}

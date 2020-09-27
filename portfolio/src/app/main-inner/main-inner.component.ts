@@ -11,4 +11,7 @@ export class MainInnerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  
+
 }

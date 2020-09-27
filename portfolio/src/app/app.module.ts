@@ -8,6 +8,8 @@ import { MainInnerComponent } from './main-inner/main-inner.component';
 
 import { Routes, RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     SideNavComponent,
     MainInnerComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,159 @@
+.about-me {
+    background-color: white;
+    height: 100%;
+    width: 100%; 
+}
+
+.quote {
+    padding-left: 2rem;
+    padding-bottom: 10px;
+    color: rgb(49, 78, 101);
+    font-weight: 600 !important;
+    font-size: 16px;
+}
+
+.about-content {
+    padding: 20px 80px 80px 80px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(85,85,85);
+}
+
+.show-more {
+    display: none;
+    position: relative;
+    left: 35%;
+    height: 100%;
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.842);
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.show-less {
+    display: none;
+    position: relative;
+    left: 35%;
+    height: 100%;
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.842);
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.section-separator {
+    position: relative;
+    /* display: none; */
+}
+
+.section-separator:nth-child(2) {
+    background: rgb(5, 130, 176);
+    clip-path: polygon(0 0%, 100% 20%, 100% 80%, 0 60%);
+    padding: 12rem 20%;
+}
+
+.section-separator2:nth-child(2) {
+    background: rgb(5, 130, 176);
+    clip-path: polygon(100% 0%, 117% 51%, 0% 100%, 0% 33%);
+    padding: 8rem 20%;
+}
+
+#section-label {
+    height: 50px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    color: rgb(85,85,85);
+}
+
+.section-header {
+    padding: 20px 20px 0px 20px;
+    margin: 0px;
+    color: rgba(128, 128, 128, 0.747);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+h6 {
+    font-weight: 800;
+}
+
+#inner-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 240px;
+    position: relative;
+    margin: 20px;
+    bottom: 112px;
+}
+
+.inner-description {
+    position: relative;
+    bottom: 250px;
+    width: 500px;
+    left: 28%;
+    color: white;
+    text-shadow: 1px 2px 2px black;  
+
+}
+
+.inner-pic-holder:nth-child(2) {
+    background: rgb(5, 130, 176);
+    color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    padding: 10rem 20%;
+    
+}
+
+
+@media (max-width: 768px) {
+
+    /* --- ABOUT ----*/
+    .about-content {
+        padding: 20px 30px 20px 30px;
+        line-height: 20px;
+    }
+
+    .bio {
+        padding-bottom: 60px;
+    }
+
+    .quote {
+        font-size: 14px;
+    }
+  }
+  
+/* ===== 600px ===== */
+  @media (max-width: 600px) {
+
+    /* --- ABOUTME --- */
+    .about-content {
+        padding: 10px 10px;
+    }
+
+    /* .hide-p {
+        color: transparent;
+        text-shadow: 0 0 8px #000;
+        font-size: smaller;
+    } */
+
+    .show-more {
+        display: block;
+    }
+
+    .show-less {
+        display: block;
+    }
+
+    .quote {
+        font-size: smaller;
+    }
+
+  }
