@@ -8,7 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  // @ViewChild('contactForm') cForm: NgForm;
+  @ViewChild('contactForm') cForm: NgForm;
 
   constructor(private http: HttpClient) { }
 
@@ -22,6 +22,7 @@ export class ContactComponent implements OnInit {
       console.log(responseData);
     })
     alert("Your message has been submitted! Please allow up to 24 hours for my reply. Thank You!");
+    this.cForm.reset();
   }
   
 }

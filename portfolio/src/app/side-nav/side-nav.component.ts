@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SideNavComponent implements OnInit {
   currentSection = '';
 
-  person = { name: 'Kong Yang', title: "Full-Stack Web Developer", imageUrl: "https://kyang0626.github.io/assets/images/port-pic.jpeg"}
+  person = { name: 'Kong Yang', title: "Full-Stack Web Developer"}
   socialMedia = [ 'LinkedIn', 'FaceBook', 'Instagram'];
 
   constructor() { }

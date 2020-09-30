@@ -128,15 +128,13 @@ input.ng-invalid.ng-touched {
     }
 
     .contact .container {
-        margin-left: 60px;
+        margin-left: 100px;
     }
 
     form {
         left: -12px;
         padding-top: 10px;
     }
-
-    
 
 }
 
