@@ -103,9 +103,18 @@ textarea {
     font-weight: 600;;
 }
 
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
 @media screen and (max-width: 1000px) {
     form {
         left: 20px;
+    }
+
+    .contact .container {
+        margin-left: 60px;
+        margin-right: 0;
     }
 }
 
@@ -119,11 +128,12 @@ textarea {
     }
 
     .contact .container {
-        margin: 20px 40px;
+        margin-left: 60px;
     }
 
     form {
         left: -12px;
+        padding-top: 10px;
     }
 
     

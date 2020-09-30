@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,22 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
+  // @ViewChild('contactForm') cForm: NgForm;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
-  submitForm() {
-    const message =  `My name is ${this.name}. My email is ${this.email}.
-    My message is ${this.message}`;
-    alert(message);
-
-    
+  submitForm(postData: {name: string, email: string, subject: string, message: string}) {
+    this.http.post("https://my-inbox-3b368.firebaseio.com/portfolioInbox.json", 
+    postData
+    ).subscribe(responseData => {
+      console.log(responseData);
+    })
+    alert("Your message has been submitted! Please allow up to 24 hours for my reply. Thank You!");
   }
-
+  
 }
