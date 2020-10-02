@@ -19,6 +19,16 @@ div {
 
 /*=============== MEDIA QUERIES =======================*/
 
+@media screen and (max-width: 1200px) {
+    .side {
+        width: 25%;
+    }
+
+    .inner {
+        width: 75%;
+    }
+}
+
 @media (max-width: 1000px) {
     .side {
         position: relative;

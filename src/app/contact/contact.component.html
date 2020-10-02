@@ -1,67 +1,64 @@
 <div class="contact" id="contactme">
     <p class="section-header">Connect with Me</p>
     <label class="content" id="section-label">Contact</label>
-        <div class="inner-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 col-md-12">
-                        <p><img src="../../assets/icons/linkedin.png" alt="" class="contact-icon"> <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank">kongyang393a35182</a></p>
-                        <br>
-                        <p><img src="../../assets/icons/outlook.png" alt="" class="contact-icon"><a href="mailto:kong_yang828@hotmail.com" target="blank">@kongyang828</a></p>
-                        <br>
-                        <p><img src="../../assets/icons/github.png" alt="" class="contact-icon"> <a href="https://github.com/kyang0626" target="blank">kyang0626</a></p>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-12">
-                        <form (ngSubmit)="submitForm(contactForm.value)" #contactForm="ngForm" >
-                            <div class="form-group">
-                                <label for="nameInput">Name</label>
-                                <input 
-                                    type="text" 
-                                    class="form-control" 
-                                    id="name" 
-                                    name="name" 
-                                    placeholder="ex. John Doe" 
-                                    ngModel
-                                    required
-                                    #name="ngModel"
-                                >
-                                <span class="help-block" *ngIf="!name.valid && name.touched" style="color: red;">Please enter a name!</span>
+    <div class="inner-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-12">
+                    <p><img src="../../assets/icons/linkedin.png" alt="" class="contact-icon"> <a href="https://www.linkedin.com/in/kong-yang-393a35182/" target="blank">kongyang393a35182</a></p>
+                    <br>
+                    <p><img src="../../assets/icons/outlook.png" alt="" class="contact-icon"><a href="mailto:kong_yang828@hotmail.com" target="blank">@kongyang828</a></p>
+                    <br>
+                    <p><img src="../../assets/icons/github.png" alt="" class="contact-icon"> <a href="https://github.com/kyang0626" target="blank">kyang0626</a></p>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-md-12">
+                    <form (ngSubmit)="submitForm(contactForm.value)" #contactForm="ngForm" >
+                        <div class="form-group">
+                            <label for="nameInput">Name</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="name" 
+                                name="name" 
+                                placeholder="ex. John Doe" 
+                                ngModel
+                                required
+                                #name="ngModel"
+                            >
+                            <span class="help-block" *ngIf="!name.valid && name.touched" style="color: red;">Please enter a name!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="email" 
+                                name="email" 
+                                placeholder="ex. johnny32@gmail.com" 
+                                ngModel
+                                required
+                                email
+                                #email="ngModel"
+                            >
+                            <span style="color: red;" class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subjectInput">Subject</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="ex. Hello" 
+                                ngModel>
                             </div>
-                            <div class="form-group">
-                               <label for="inputEmail">Email address</label>
-                               <input 
-                                    type="text" 
-                                    class="form-control" 
-                                    id="email" 
-                                    name="email" 
-                                    placeholder="ex. johnny32@gmail.com" 
-                                    ngModel
-                                    required
-                                    email
-                                    #email="ngModel"
-                                >
-                                <span style="color: red;" class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="subjectInput">Subject</label>
-                                <input 
-                                    type="text" 
-                                    class="form-control" 
-                                    id="subject" 
-                                    name="subject" 
-                                    placeholder="ex. Hello" 
-                                    ngModel>
-                              </div>
-                            <div class="form-group">
-                                <textarea name="message" class="textarea" placeholder="Message" ngModel></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
-                          </form>
-                    </div>
+                        <div class="form-group">
+                            <textarea name="message" class="textarea" placeholder="Message" ngModel></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
+                        </form>
                 </div>
             </div>
-            <div class="footer">
-                <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            </div>
-        </div>    
+        </div>   
+    </div> 
 </div>
