@@ -1,0 +1,13 @@
+#mobile-nav {
+    position: fixed;
+    background: rgb(58, 58, 58);
+    width: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    #mobile-nav {
+        display: block;
+    }
+}
