@@ -1,14 +1,18 @@
 .contact {
     height: 100%;
-    padding-top: 40px;
+    padding: 40px 0;
     font-size: 14px;
     width: 100%;
     background: white;
 }
 
+.contact .container {
+    margin-left: 40px;
+}
+
 .contact input {
-    height: 30px;
-    width: 400px;
+    height: 40px;
+    width: 80%;
     margin-bottom: 0px;
     background: rgba(224, 224, 224, 0.473);
     border: none;
@@ -22,6 +26,10 @@
     padding: 40px 40px;
     margin: 0;
     font-size: 14px;
+}
+
+.inner-content {
+    padding-top: 40px;
 }
 
 #section-label {
@@ -53,7 +61,7 @@
 form {
     padding: 40px 0;
     position: relative;
-    right: 14px;
+    left: 20%;
 }
 
 .form-group {
@@ -67,8 +75,8 @@ form label {
 }
 
 textarea {
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 80%;
     background: rgba(224, 224, 224, 0.473);
     border: none;
     font-size: 14px;
@@ -90,21 +98,14 @@ textarea {
     padding-right: 20px;
 }
 
-.footer {
-    background: rgb(52,58,64);
-    height: 100px;
-    width: 100%;
-    padding: 20px;
-    color: white;
-}
-
-.footer a {
-    color: rgb(5, 130, 176);
-    font-weight: 600;;
-}
-
 input.ng-invalid.ng-touched {
     border: 1px solid red;
+}
+
+@media screen and (max-width: 1200px) {
+    form {
+        left: 10%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -128,11 +129,11 @@ input.ng-invalid.ng-touched {
     }
 
     .contact .container {
-        margin-left: 100px;
+        margin-left: 60px;
     }
 
     form {
-        left: -12px;
+        left: -20px;
         padding-top: 10px;
     }
 
